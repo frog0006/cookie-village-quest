@@ -88,3 +88,8 @@ function goToInventory() {
 function goToThirdHouse() {
   window.location.href = "thirdhouse.html";
 }
+
+function wipeData() {
+  localStorage.clear();
+  location.reload();
+}
