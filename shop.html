@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cookie Village</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="shop.js" defer></script>
+  </head>
+  <body>
+    <pre>
+        /------------------------------------------------------------------------------------------------------------------------------------\
+        |                                                                                                                                    |
+        |             Cookies: <span id="cookies">0</span>                                                                                                          |
+        |                                                                                                                                    |
+        |                                                                                                                                    |
+        |                   +-----------------------------------------------+                                                                |
+        |                   |                           ____----___         |                                                                |
+        |                   |      ____________________/           --       |                                                                |
+        |       Spoon       |     |                                  -\     |                                                                |
+        | <button id="spoon-purchase" onclick="buyWeapon('spoon')">PURCHASE $67</button>|     |____________________             _-/     |                                                                |
+        |                   |                          \____    __--        |                                                                |
+        |                   |                               ----            |       Welcome, traveller, to the Forge!                        |
+        |                   +-----------------------------------------------+       Feel free to check out any of the bakery tools!          |
+        |                                                                                                                                    |
+        |                                                                                     _______                                        |
+        |                                                                                    /       \                                       |
+        |                   +----------------------------------------------+             ___/ ________\____                                  |
+        |                   |                           ____________       |            |____/ /. .\ \____|                                  |
+        |                   |                          /            |      |                  |\__/ |                                        |
+        |                   |    _____________________/  ---------  |      |                   \___/                                         |
+        |      Spatula      |   |_____________________   ---------  |      |                     |                                           |
+        |<button id="spatula-purchase" onclick="buyWeapon('spatula')">PURCHASE $200</button> |                         \  ---------  |      |                     |                                           |
+        |                   |                          \____________|      |           \_________|_______/                                   |
+        |                   |                                              |                     |                                           |
+        |                   +----------------------------------------------+                     |                                           |
+        |                                                                                        |                                           |
+        |                                                                                       _|__                                         |
+        |                                                                                      /    \                                        |
+        |                   +-----------------------------------------------+                 /      \                                       |
+        |                   |                  ____________                 |                /        \                                      |
+        |                   |    _____________/            \_____________   |             __/          \__                                   |
+        |      Rolling      |   |_____________              _____________|  |                                                                |
+        |        Pin        |                 \____________/                |                                                                |
+        |<button id="rollingPin-purchase" onclick="buyWeapon('rollingPin')">PURCHASE $500</button> |                                               |                                                                |
+        |                   |                                               |                                                                |
+        |                   +-----------------------------------------------+                                                                |
+        |                                                                                                                                    |
+        |                                                                                                                                    |
+        |                                                                                                                                    |
+        \------------------------------------------------------------------------------------------------------------------------------------/
+    </pre>
+
+    <button id="marcus" onclick="goToVillage()">Go Back to Village!</button>
+    <script src="shop.js"></script>
+    <script>
+      function goToVillage() {
+        window.location.href = "index.html";
+      }
+    </script>
+  </body>
+</html>

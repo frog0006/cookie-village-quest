@@ -1,0 +1,98 @@
+h1 {
+  text-decoration: underline;
+  font-family: courier new;
+  color: white;
+}
+
+p {
+  font-family: courier new;
+  color: white;
+}
+
+button {
+  background: rgb(139, 71, 2);
+  border: rgb(139, 71, 2);
+  font-family: courier new;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+body {
+  color: white;
+  background-color: rgb(139, 71, 2);
+}
+#eatCookies {
+  background-color: rgb(113, 57, 2);
+  padding: 15px 30px;
+  border-radius: 20px;
+  font-size: 20px;
+}
+
+#eatCookies:hover {
+  background-color: #8f6520;
+}
+#upgradeButton: :hover {
+  background-color: #e0c8a1;
+}
+.eatCookies-container {
+  text-align: center;
+  width: 100%;
+}
+eatCookies {
+  padding: 10px 20px;
+}
+
+#inventory {
+  background-color: rgb(113, 57, 2);
+  padding: 15px 30px;
+  border-radius: 20px;
+  font-size: 20px;
+}
+#inventory:hover {
+  background-color: #8f6520;
+}
+
+h1 {
+  padding: 10px 20px;
+  border-radius: 15px;
+  font-size: 3em;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  display: inline-block;
+
+  animation-name: rgb-pulsating;
+  animation-duration: 10s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rgb-pulsating {
+  0% {
+    background-color: rgba(255, 0, 0, 0.795);
+  }
+  20% {
+    background-color: rgba(197, 0, 0, 0.644);
+  }
+  45% {
+    background-color: rgba(139, 0, 0, 0.664);
+  }
+  60% {
+    background-color: rgba(255, 0, 0, 0.795);
+  }
+  80% {
+    background-color: rgba(197, 0, 0, 0.644);
+  }
+  100% {
+    background-color: rgba(139, 0, 0, 0.664);
+  }
+}
+
+#cookieDownSpoon,
+#cookieDownSpatula,
+#cookieDownRollingpin {
+  background-color: rgb(139, 71, 2);
+  border: rgb(139, 71, 2);
+  font-weight: bold;
+  font-family: courier new;
+}

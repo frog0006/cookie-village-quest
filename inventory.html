@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cookie Village</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <script src="inventory.js"></script>
+  <body>
+    <pre>
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~INVENTORY~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        |                               Spoon                               |
+        |                              <button onclick="equipWeapon('spoon')">Equip</button>                             |
+        |                                                                   |
+        |                                                                   |
+        |                                                                   |
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        |                              Spatula                              |
+        |                              <button onclick="equipWeapon('spatula')">Equip</button>                             |
+        |                                                                   |
+        |                                                                   |
+        |                                                                   |
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        |                            Rolling Pin                            |
+        |                              <button onclick="equipWeapon('rollingPin')">Equip</button>                             |
+        |                                                                   |
+        |                                                                   |
+        |                                                                   |
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    </pre>
+
+    <p id="equippedDisplay">Equipped: None</p>
+
+    <button id="marcus" onclick="goToVillage()">Go Back to Village!</button>
+    <script>
+      function goToVillage() {
+        window.location.href = "index.html";
+      }
+    </script>
+    <script>
+      let equipped = null;
+
+      // Load equipped weapon when page loads
+      window.onload = function () {
+        const saved = localStorage.getItem("equippedWeapon");
+        if (saved) {
+          equipped = saved;
+          document.getElementById("equippedDisplay").textContent =
+            "Equipped: " + equipped;
+        }
+      };
+
+      // Handle equip button click
+      function equipWeapon(weaponName) {
+        equipped = weaponName;
+        localStorage.setItem("equippedWeapon", equipped);
+
+        document.getElementById("equippedDisplay").textContent =
+          "Equipped: " + equipped;
+      }
+
+      // Back to village button
+      function goToVillage() {
+        window.location.href = "index.html";
+      }
+    </script>
+  </body>
+</html>
