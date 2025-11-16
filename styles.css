@@ -32,7 +32,7 @@ body {
 #eatCookies:hover {
   background-color: #8f6520;
 }
-#upgradeButton: :hover {
+#upgradeButton :hover {
   background-color: #e0c8a1;
 }
 .eatCookies-container {
@@ -51,6 +51,17 @@ eatCookies {
 }
 #inventory:hover {
   background-color: #8f6520;
+}
+
+#wipe {
+  background-color: rgb(113, 57, 2);
+  padding: 15px 30px;
+  border-radius: 20px;
+  font-size: 20px;
+}
+
+#wipe:hover {
+  background-color: #ff0000;
 }
 
 h1 {
